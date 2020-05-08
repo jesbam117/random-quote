@@ -35,13 +35,15 @@ const QuoteMachine = () => {
     }, [quotes]);
 
     return (
-        <div>
+        <div className="card">
             {
                 quotes.length > 0 &&
                 <>
                     <Quote quote={quotes[index].quote} author={quotes[index].author} />
-                    <Tweet quote={quotes[index].quote} author={quotes[index].author} />
-                    <button onClick={() => generateRandomIndex(quotes)}>New Quote</button>
+                    <div className="buttons">
+                        <Tweet quote={quotes[index].quote} author={quotes[index].author} />
+                        <button id="new-quote" className="button" onClick={() => generateRandomIndex(quotes)}>New Quote</button>
+                    </div>
                 </>
             }
         </div>

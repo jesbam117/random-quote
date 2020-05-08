@@ -1,3 +1,9 @@
+:root {
+  --color-dark-1: #1F2041;
+  --color-dark-2: hsl(238, 34%, 15%);
+  --color-light: #F6F8FF;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,5 +12,68 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-size: 16px;
 }
 
+.app {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-dark-1);
+  color: var(--color-light);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 100%;
+  width: 600px;
+  background-color: var(--color-light);
+  color: #1E212B;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  font: inherit;
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 8px 10px;
+  border: 2px solid var(--color-dark-1);
+  border-radius: 5px;
+  background-color: var(--color-dark-1);
+  color: var(--color-light);
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--color-dark-2);
+}
+
+.quote {
+  text-align: center;
+}
+
+.quote-text {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.quote-author {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

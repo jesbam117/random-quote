@@ -4,7 +4,7 @@ import QuoteMachine from './components/QuoteMachine';
 
 function App() {
   return (
-    <div>
+    <div className="app">
      <QuoteMachine />
     </div>
   );
